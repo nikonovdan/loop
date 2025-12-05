@@ -88,7 +88,7 @@ main{
 }
 /*--------header-----------*/
 .header{
-    min-height: 800px;
+    /* min-height: 800px; */
     background-color: #F9F6F1;
 }
 .header-menu{
@@ -321,7 +321,7 @@ ul {
 }
 
 .dress-item {
-    width: 277px;
+    width: 25%;
     height: 236px;
     text-align: right;
     position: relative;
@@ -331,7 +331,7 @@ ul {
 
 .dress-item img {
     height:236px ;
-    width:278px ;
+    width:100% ;
 }
 .dress-item-grey{
     background-color: #f4f4f4;
@@ -339,4 +339,13 @@ ul {
 
 .dress-item-cream {
     background-color: #F9F6F1;
+}
+
+.platie {
+    position: absolute;
+    top: 180px;
+    right: 150px;
+    z-index: 10;
+    font-size: 21px;
+    text-transform: uppercase;
 }
