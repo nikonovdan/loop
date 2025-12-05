@@ -93,6 +93,11 @@ main{
 }
 .header-menu{
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
 }
 
 .section__wrapper {
@@ -223,3 +228,115 @@ ul {
     margin-bottom: 20px;
     
 } */
+/*------banner--------*/
+.slider-item {
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background:url('../img/shoes.png') no-repeat right center;
+}
+
+.slider-text {
+    font-size: 30px;
+    padding-bottom: 36px;
+}
+
+.slider-big-text {
+    font-family: "montserrat" , "Arial", sans-serif;
+    font-weight:bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    padding-bottom: 54px;
+}
+
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slider-item-price {
+    font-family:"montserratbold" , "Arial", sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider-item-old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+    position: absolute;
+    top: 140px;
+    right: 10px;
+}
+
+.slider-iten-new {
+    font-size: 42px;
+    color: #d84033;
+    padding-top: 14px;
+}
+
+.banner-btn {
+    width: 240px;
+    height: 55px;
+    background-color: #d7b399;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    font-family: "montserratlight";
+    font-weight: 200px;
+    
+}
+
+.banner-btn:hover, 
+.banner-btn:focus {
+    background-color: #bb835c;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+}
+
+.slider-button-prev {
+    left: -100px;
+    border: none;
+    background-color: #F9F6F1;
+}
+
+.slider-button-next {
+    right: -100px;
+    border: none;
+    background-color: #F9F6F1;
+}
+
+.dress_wrapper {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.dress-item {
+    width: 277px;
+    height: 236px;
+    text-align: right;
+    position: relative;
+    
+    
+}
+
+.dress-item img {
+    height:236px ;
+    width:278px ;
+}
+.dress-item-grey{
+    background-color: #f4f4f4;
+}
+
+.dress-item-cream {
+    background-color: #F9F6F1;
+}
