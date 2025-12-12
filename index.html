@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts copy/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>The loop</title>
 </head>
 <body>
   <header class="header">
     <section class="section header-menu">
-      <div class="section__wrapper container">
-
+      <div class="section__wrapper container menu__wrapper">
+        <button class="navbar-toggler" id="navbar-toggler" type="button">
+          <img src="img/list-solid-full.svg" alt="burger" width="30px">
+        </button>
         <div class="menu">
           <ul class="mainmenu__list">
             <li class="mainmenu__item">
@@ -23,6 +28,7 @@
             <li class="mainmenu__item">
               <a class="menu__link" href="#">Для детей</a>
             </li>
+            
           </ul>
         </div>
 
@@ -63,6 +69,7 @@
         </section>
         <section class="banner">
             <div class="container">
+              <div class="slider-wrapper">
                 <div class="slider-item">
                   <div class="slider-item-text">
                     <p class="slider-text">Зимняя распродажа</p>
@@ -82,6 +89,7 @@
                 <button type="button" class="slider-button slider-button-next">
                   <img src="img/pravo.png" alt="">
                 </button>
+              </div>
             </div>
         </section>
     </header>
@@ -116,14 +124,14 @@
         </section>
         <section class="dress">
             <div class="container section__wrapper dress_wrapper">
-                <div class="dress-item dress-item-grey"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-cream"><img src="img/futbolka.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-grey"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-cream"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-cream"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-grey"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-cream"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
-                <div class="dress-item dress-item-grey"><img src="img/futbolkanorm.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-grey"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-cream"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-grey"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-cream"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-cream"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-grey"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-cream"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
+                <div class="dress-item dress-item-grey"><img src="img/tshirt.png" alt=""><p class="platie">Платья</p></div>
             </div>
         </section>
         <section class="new">
@@ -194,5 +202,14 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript">
+      const btn = document.getElementById("navbar-toggler");
+      const menus = document.querySelectorAll(".menu");
+      btn.addEventListener('click', () => {
+        for (let el of menus) {
+          el.classList.toggle("show");
+        }
+      })
+    </script>
 </body>
 </html>
