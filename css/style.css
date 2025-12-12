@@ -443,7 +443,7 @@ ul {
     }
     .logo {
         order: -1;
-        width: 100%;
+        /* width: 100%; */
     }
 
 }
